@@ -4,7 +4,7 @@ import HandTrackingModule as htm
 import time
 import autopy
 
-#######################
+####################### Basic Camera Setting
 wCam, hCam = 640, 480
 #######################
 
