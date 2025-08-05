@@ -17,4 +17,8 @@ while True:
     success, img = cap.read()
     #Step 2: get the tip of index and middle fingers
     cv2.imshow("Image", img)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
     cv2.waitKey(1)
