@@ -13,6 +13,8 @@ cap.set(3,wCam)
 cap.set(4, hCam)
 
 while True:
+    #Step 1: Find the Hand Landmarks
     success, img = cap.read()
+    #Step 2: get the tip of index and middle fingers
     cv2.imshow("Image", img)
     cv2.waitKey(1)
