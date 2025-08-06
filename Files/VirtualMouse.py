@@ -26,7 +26,11 @@ while True:
     #Step 9: Find distance between the fingers
     #Step 10: If distance is short, then do the clicking action
     #Step 11: Checking the Frame Rate
+    cTime = time.time()
+    fps = 1 - (cTime - pTime) /60
+    pTime = cTime
     #Step 12: Displaying the result
+
     cv2.imshow("Image", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
