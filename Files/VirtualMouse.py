@@ -17,6 +17,10 @@ while True:
     #Step 1: Find the Hand Landmarks
     success, img = cap.read()
     #Step 2: get the tip of index and middle fingers
+    #Step 3: Check which fingers is up
+    #Step 4: Only Index Finger : Moving mode
+    #Step 5: Converting into coordinates
+    #Step 6: Smoothen the values
     cv2.imshow("Image", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
