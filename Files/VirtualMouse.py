@@ -25,6 +25,8 @@ while True:
     #Step 8: For Clicking mode check if both index and middle fingers are up
     #Step 9: Find distance between the fingers
     #Step 10: If distance is short, then do the clicking action
+    #Step 11: Checking the Frame Rate
+    #Step 12: Displaying the result
     cv2.imshow("Image", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
