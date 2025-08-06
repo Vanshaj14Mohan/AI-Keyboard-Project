@@ -21,6 +21,10 @@ while True:
     #Step 4: Only Index Finger : Moving mode
     #Step 5: Converting into coordinates
     #Step 6: Smoothen the values
+    #Step 7: Moving the mouse using the coordinates
+    #Step 8: For Clicking mode check if both index and middle fingers are up
+    #Step 9: Find distance between the fingers
+    #Step 10: If distance is short, then do the clicking action
     cv2.imshow("Image", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
