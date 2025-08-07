@@ -28,7 +28,7 @@ while True:
     #Step 10: If distance is short, then do the clicking action
     #Step 11: Checking the Frame Rate
     cTime = time.time()
-    fps = 1 - (cTime - pTime) /60
+    fps = 1 / (cTime - pTime)
     pTime = cTime
     cv2.putText(img, f"FPS:{int(fps)}", (20, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3) #FPS Count 
     #Step 12: Displaying the result
