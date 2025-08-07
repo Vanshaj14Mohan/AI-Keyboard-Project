@@ -12,6 +12,7 @@ wCam, hCam = 640, 480
 cap = cv2.VideoCapture(0)
 cap.set(3,wCam)
 cap.set(4, hCam)
+pTime = 0
 
 while True:
     #Step 1: Find the Hand Landmarks
@@ -29,8 +30,8 @@ while True:
     cTime = time.time()
     fps = 1 - (cTime - pTime) /60
     pTime = cTime
+    cv2.putText(img, f"FPS:{int(fps)}", (20, 50), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3) #FPS Count 
     #Step 12: Displaying the result
-
     cv2.imshow("Image", img)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
