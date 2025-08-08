@@ -13,7 +13,6 @@ cap = cv2.VideoCapture(0)
 cap.set(3,wCam)
 cap.set(4, hCam)
 pTime = 0
-
 detector = htm.HandDetector(maxHands=1)
 
 while True:
@@ -25,7 +24,7 @@ while True:
     #Step 2: get the tip of index and middle fingers
     # if len(lmList)! = 0:
     #     x1, y1 = lmList[8][1], lmList[8][2]
-    
+
     #Step 3: Check which fingers is up
     #Step 4: Only Index Finger : Moving mode
     #Step 5: Converting into coordinates
